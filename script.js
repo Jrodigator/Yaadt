@@ -73,6 +73,30 @@ document.addEventListener('DOMContentLoaded', () => {
                 link.classList.add('active');
             }
         });
+
+        // Add mobile menu toggle
+        const menuToggle = document.createElement('button');
+        menuToggle.id = 'mobile-menu-toggle';
+        menuToggle.className = 'mono';
+        menuToggle.innerHTML = '☰ MENU';
+        document.body.appendChild(menuToggle);
+        
+        menuToggle.addEventListener('click', () => {
+            sidebar.classList.toggle('open');
+            if(sidebar.classList.contains('open')) {
+                menuToggle.innerHTML = '✕ CLOSE';
+            } else {
+                menuToggle.innerHTML = '☰ MENU';
+            }
+        });
+        
+        // Close menu when clicking outside
+        document.addEventListener('click', (e) => {
+            if (window.innerWidth <= 900 && sidebar.classList.contains('open') && !sidebar.contains(e.target) && e.target !== menuToggle) {
+                sidebar.classList.remove('open');
+                menuToggle.innerHTML = '☰ MENU';
+            }
+        });
     }
 
     // 3. Scroll Reveal Logic
