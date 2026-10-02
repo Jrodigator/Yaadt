@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaadt or Not Yaadt? - Yaadtverse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <main id="main-content">
+        <div class="archive-doc">
+            <div class="doc-header mono">
+                <div class="doc-meta">
+                    <span>YAADTRAINING MODULE: 7A</span>
+                    <span>PURPOSE: YAADTCHIVIST ASSESSMENT</span>
+                </div>
+            </div>
+            
+            <h1 style="text-align: center;">YAADT OR NOT YAADT?</h1>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 4rem;">Identify whether the following historical statements are accurate.</p>
+            
+            <div class="game-container">
+                <div class="game-score mono" id="game-score">SCORE: 0 | STREAK: 0</div>
+                
+                <div class="game-statement" id="game-statement" style="transition: opacity 0.3s;">
+                    Loading...
+                </div>
+                
+                <div class="game-buttons">
+                    <button class="game-btn" id="btn-yaadt">YAADT</button>
+                    <button class="game-btn" id="btn-not-yaadt">NOT YAADT</button>
+                </div>
+                
+                <div class="game-result mono" id="game-result"></div>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

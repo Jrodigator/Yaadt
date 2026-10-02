@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yaadtnerator - Yaadtverse</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="stars"></div>
+    <div id="stars2"></div>
+    <div id="stars3"></div>
+    
+    <main id="main-content">
+        <div class="archive-doc">
+            <div class="doc-header mono">
+                <div class="doc-meta">
+                    <span>TOOL: YAADTITY SYNTHESIZER</span>
+                    <span>STATUS: OPERATIONAL</span>
+                </div>
+            </div>
+            
+            <h1 style="text-align: center;">THE YAADTNERATOR</h1>
+            <p style="text-align: center; color: var(--text-muted); margin-bottom: 3rem;">Retrieve a randomized historical record from the deep yaadchives.</p>
+            
+            <div class="generator-box">
+                <div id="generated-entity" class="mono" style="transition: opacity 0.3s;">
+                    <div class="entity-row">
+                        <span class="entity-label">NAME:</span>
+                        <span class="entity-value" id="gen-name"></span>
+                    </div>
+                    <div class="entity-row">
+                        <span class="entity-label">TITLE:</span>
+                        <span class="entity-value" id="gen-title"></span>
+                    </div>
+                    <div class="entity-row">
+                        <span class="entity-label">ERA:</span>
+                        <span class="entity-value" id="gen-era"></span>
+                    </div>
+                    <div class="entity-row">
+                        <span class="entity-label">ALIGNMENT:</span>
+                        <span class="entity-value" id="gen-alignment"></span>
+                    </div>
+                    <div class="entity-row">
+                        <span class="entity-label">SIGNIFICANCE:</span>
+                        <span class="entity-value" id="gen-significance"></span>
+                    </div>
+                    <div class="entity-row">
+                        <span class="entity-label">KNOWN FOR:</span>
+                        <span class="entity-value" id="gen-known"></span>
+                    </div>
+                </div>
+                
+                <button class="btn-enter mono" id="btn-generate">GENERATE NEW YAADTITY</button>
+            </div>
+        </div>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>
